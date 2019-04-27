@@ -1,4 +1,5 @@
 import React from 'react';
+import Calendar from './Calendar.jsx';
 
 class App extends React.Component {
   state = {
@@ -7,9 +8,20 @@ class App extends React.Component {
 
   render() {
     return (
-    <div>
-      Hellooooo
+      <div className="App">
+      <header>
+        <div id="logo">
+          <span className="icon">date_range</span>
+          <span>
+            react<b>calendar</b>
+          </span>
+        </div>
+      </header>
+      <main>
+        <Calendar />
+      </main>
     </div>
+
     )
   }
 }
